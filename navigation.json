@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Fundamentos",
+    "items": [
+      { "title": "Resumen", "slug": "Summary" },
+      { "title": "Manual Completo", "slug": "Complete_Manual" },
+      { "title": "Principios de Software Estadístico", "slug": "Statistical_Software_Principles" },
+      { "title": "Getting Started", "slug": "Getting_Started" }
+    ]
+  },
+  {
+    "title": "Implementación Técnica",
+    "items": [
+      { "title": "Guía de Implementación de Sistemas Estadísticos", "slug": "Statistical_Systems_Implementation_Guide" },
+      { "title": "MLflow y Gestión de Modelos", "slug": "MLflow" },
+      { "title": "Feature Store", "slug": "Feature_Store" }
+    ]
+  },
+  {
+    "title": "DataOps y Gobernanza",
+    "items": [
+      { "title": "DataOps e Ingeniería Estadística", "slug": "DataOps_Statistical_Engineering" },
+      { "title": "Gobernanza de Datos", "slug": "Data_Governance" }
+    ]
+  },
+  {
+    "title": "Monitoreo y Seguridad",
+    "items": [
+      { "title": "Monitoreo de Modelos", "slug": "Monitoring" },
+      { "title": "Gestión de Secretos y Vault", "slug": "Secrets_Management" }
+    ]
+  },
+  {
+    "title": "Operaciones y Calidad",
+    "items": [
+      { "title": "Costos y Eficiencia", "slug": "Cost_Efficiency" },
+      { "title": "Guía de Despliegue (CI/CD + Docker)", "slug": "Deployment_Guide" },
+      { "title": "Rollback de Modelos", "slug": "Rollback" },
+      { "title": "Pruebas de Integración", "slug": "Integration_Tests" },
+      { "title": "Checklist Compliance MLOps", "slug": "MLOps_Compliance_Checklist" }
+    ]
+  },
+  {
+    "title": "Visualización y UI",
+    "items": [
+      { "title": "Buenas Prácticas Shiny", "slug": "Shiny_Best_Practices" },
+      { "title": "Presentación y Visualización React", "slug": "React_Visualization_Presentation" },
+      { "title": "UX/UI para Dashboards", "slug": "UX_UI" }
+      , { "title": "Visualización Estadística R y Python", "slug": "Visualization_Libraries_Best_Practices" }
+    ]
+  },
+  {
+    "title": "Cultura y Habilidades",
+    "items": [
+      { "title": "Cultura de Datos", "slug": "Data_Culture" },
+      { "title": "Skills y Microagentes IA", "slug": "Microagent_Skills" }
+    ]
+  },
+  {
+    "title": "Estrategia y Resolución",
+    "items": [
+      { "title": "Roadmap de Madurez", "slug": "Roadmap" },
+      { "title": "Resolución de Problemas", "slug": "Problem_Solving" }
+    ]
+  }
+]

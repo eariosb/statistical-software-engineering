@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Preguntas y propuestas generales
+    url: https://github.com/eariosb/statistical-software-engineering/discussions
+    about: Para preguntas sobre el contenido o ideas abiertas, usa Discussions.

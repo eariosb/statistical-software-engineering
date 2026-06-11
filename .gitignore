@@ -1,0 +1,192 @@
+# ============================================================
+# .gitignore para Ingeniería de Software Estadístico
+# ============================================================
+# Este archivo excluye del repositorio:
+#  - Artefactos de compilación y dependencias
+#  - Secretos, credenciales y variables de entorno
+#  - Datos crudos, modelos serializados y logs de auditoría
+#  - Configuraciones locales de IDE y sistema
+#  - Archivos internos de planificación y lanzamiento
+# ============================================================
+
+# ------------------------------------------------------------
+# Dependencias y artefactos de Node.js / Next.js
+# ------------------------------------------------------------
+node_modules/
+.next/
+out/
+build/
+dist/
+tsconfig.tsbuildinfo
+
+# Logs de paquetes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------
+# Variables de entorno y secretos
+# ------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.pem
+*.key
+*.crt
+*.p12
+.secrets
+.secrets.*
+!secrets.example
+
+# ------------------------------------------------------------
+# Archivos generados por la aplicación
+# ------------------------------------------------------------
+public/search-index.json       # Índice de búsqueda estático
+
+# ------------------------------------------------------------
+# Directorios de cache y temporales
+# ------------------------------------------------------------
+.cache/
+.tmp/
+tmp/
+temp/
+*.tmp
+.cache-loader/
+.eslintcache
+.nyc_output/
+coverage/
+*.lcov
+
+# ------------------------------------------------------------
+# Archivos de logs (excepto .gitkeep)
+# ------------------------------------------------------------
+*.log
+audit/*.log
+audit/*.json
+!audit/.gitkeep
+
+# ------------------------------------------------------------
+# Artefactos de MLflow y DVC
+# ------------------------------------------------------------
+mlruns/
+mlflow.db
+.dvc/cache/
+.dvc/tmp/
+*.dvc.lock
+
+# ------------------------------------------------------------
+# Modelos serializados y datos binarios grandes
+# ------------------------------------------------------------
+models/*.rds
+models/*.pkl
+models/*.joblib
+models/*.cbm
+*.parquet
+*.feather
+*.h5
+*.pb
+
+# ------------------------------------------------------------
+# Datos crudos y procesados
+# ------------------------------------------------------------
+data/raw/
+data/processed/
+!data/.gitkeep
+
+# ------------------------------------------------------------
+# Python: bytecode, entornos virtuales, cachés
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ------------------------------------------------------------
+# R: renv, archivos de proyecto, historial
+# ------------------------------------------------------------
+renv/library/
+renv/staging/
+renv/local/
+renv/python/
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# ------------------------------------------------------------
+# Notebooks (Jupyter, RMarkdown) – no versionar si son exploratorios
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+*.nb.html
+*.qmd
+_quarto/
+
+# ------------------------------------------------------------
+# Documentación generada (no versionar builds)
+# ------------------------------------------------------------
+docs/_build/
+docs/api/
+*.pdf
+*.html
+!index.html
+
+# ------------------------------------------------------------
+# Configuraciones de IDE y sistema
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Archivos de compilación / empaquetado
+# ------------------------------------------------------------
+*.tar.gz
+*.tar
+docker-compose.override.yml
+!docker-compose.yml
+
+# ------------------------------------------------------------
+# Reportes de vulnerabilidades y análisis estático
+# ------------------------------------------------------------
+trivy-reports/
+snyk-reports/
+
+# ------------------------------------------------------------
+# Archivos de planificación interna y lanzamiento (no públicos)
+# ------------------------------------------------------------
+GROWTH_PLAN.md
+launch/
+
+# ------------------------------------------------------------
+# Entornos conda (compartir solo la plantilla)
+# ------------------------------------------------------------
+environment.yml
+conda-lock.yml
+!environment.yml.example
+
+# ------------------------------------------------------------
+# Herramientas de pre-commit (los hooks se instalan)
+# ------------------------------------------------------------
+.pre-commit-hooks.yaml
