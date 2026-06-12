@@ -6,7 +6,7 @@
 
   <p>
     <b>El manual open source para llevar modelos estadísticos de R/Python a producción.</b><br>
-    MLOps · DataOps · Shiny · Monitoreo · Gobernanza — escrito en español 🇪🇸🇨🇴
+    MLOps · DataOps · Shiny · Monitoreo · Gobernanza, escrito en español 🇪🇸🇨🇴
   </p>
 
   <p>
@@ -30,7 +30,7 @@
 
 ## Por qué existe este manual
 
-A la mayoría de estadísticos y científicos de datos nunca nos enseñaron a poner modelos en producción: cómo versionarlos, probarlos, desplegarlos, monitorearlos o revertirlos cuando fallan. Los recursos que existen están dispersos en decenas de blogs — y casi ninguno está en español.
+A la mayoría de estadísticos y científicos de datos nunca nos enseñaron a poner modelos en producción: cómo versionarlos, probarlos, desplegarlos, monitorearlos o revertirlos cuando fallan. Los recursos que existen están dispersos en decenas de blogs, y casi ninguno está en español.
 
 Este manual cierra esa brecha: una referencia única, opinada y de extremo a extremo que te lleva desde un modelo estadístico en R o Python hasta un producto de datos gobernado, monitoreado y listo para producción.
 
@@ -47,7 +47,7 @@ Este manual cierra esa brecha: una referencia única, opinada y de extremo a ext
 | [Cultura y habilidades](https://statistical-software-engineering.vercel.app/docs/Data_Culture) | Cultura de datos, microagentes y skills de IA |
 | [Estrategia](https://statistical-software-engineering.vercel.app/docs/Roadmap) | Roadmap de madurez y resolución estructurada de problemas |
 
-**¿No sabés por dónde empezar?** → [Empieza aquí](https://statistical-software-engineering.vercel.app/start-here) — rutas guiadas para estadísticos, ingenieros de datos y estudiantes.
+**¿No sabés por dónde empezar?** → [Empieza aquí](https://statistical-software-engineering.vercel.app/start-here), rutas guiadas para estadísticos, ingenieros de datos y estudiantes.
 
 ## Una muestra del contenido
 
@@ -55,7 +55,7 @@ Cinco reglas destiladas del [Checklist de Compliance MLOps](https://statistical-
 
 > - Toda versión de modelo es reproducible desde código, datos y entorno versionados.
 > - Todo modelo en producción tiene un responsable registrado y un plan de rollback documentado.
-> - La validación de datos corre *antes* del entrenamiento — nunca entrenes con datos sin validar.
+> - La validación de datos corre *antes* del entrenamiento, nunca entrenes con datos sin validar.
 > - Las métricas de drift tienen umbrales explícitos conectados a alertas, no a dashboards que nadie mira.
 > - Los secretos nunca viven en el código ni en notebooks; viven en un vault.
 
@@ -64,7 +64,7 @@ Cinco reglas destiladas del [Checklist de Compliance MLOps](https://statistical-
 <!-- TODO: reemplazar con un GIF de 10-15s (buscador + modo oscuro + diagramas Mermaid) -->
 ![Demo: navegando el manual](docs/demo.gif)
 
-O simplemente visita el **[sitio en vivo](https://statistical-software-engineering.vercel.app)** — con buscador de texto completo, modo oscuro y diagramas Mermaid.
+O simplemente visita el **[sitio en vivo](https://statistical-software-engineering.vercel.app)**, con buscador de texto completo, modo oscuro y diagramas Mermaid.
 
 ## Inicio rápido
 
@@ -93,7 +93,7 @@ npm run build
 
 ## Cómo contribuir
 
-Las contribuciones son bienvenidas — el contenido (correcciones, ejemplos, traducciones) importa tanto como el código. Revisa los [good first issues](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue) y la [guía de contribución](CONTRIBUTING.md).
+Las contribuciones son bienvenidas, el contenido (correcciones, ejemplos, traducciones) importa tanto como el código. Revisa los [good first issues](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue) y la [guía de contribución](CONTRIBUTING.md).
 
 ## Licencia
 

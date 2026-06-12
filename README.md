@@ -6,7 +6,7 @@
 
   <p>
     <b>The open-source handbook for taking statistical models from R/Python to production.</b><br>
-    MLOps · DataOps · Shiny · Monitoring · Governance — written in Spanish 🇪🇸🇨🇴
+    MLOps · DataOps · Shiny · Monitoring · Governance, written in Spanish
   </p>
 
   <p>
@@ -30,7 +30,7 @@
 
 ## Why this exists
 
-Most statisticians and data scientists are never taught how to ship their models: how to version them, test them, deploy them, monitor them, or roll them back when they fail. The resources that do exist are fragmented across dozens of blogs — and almost none are available in Spanish.
+Most statisticians and data scientists are never taught how to ship their models: how to version them, test them, deploy them, monitor them, or roll them back when they fail. The resources that do exist are fragmented across dozens of blogs, and almost none are available in Spanish.
 
 This handbook bridges that gap. It is a single, opinionated, end-to-end reference that takes you from a statistical model in R or Python to a governed, monitored, production-grade data product.
 
@@ -47,7 +47,7 @@ This handbook bridges that gap. It is a single, opinionated, end-to-end referenc
 | [Culture & skills](https://statistical-software-engineering.vercel.app/docs/Data_Culture) | Data culture, AI micro-agents and skills |
 | [Strategy](https://statistical-software-engineering.vercel.app/docs/Roadmap) | Maturity roadmap, structured problem solving |
 
-**Not sure where to begin?** → [Start here](https://statistical-software-engineering.vercel.app/start-here) — guided paths for statisticians, data engineers, and students.
+**Not sure where to begin?** → [Start here](https://statistical-software-engineering.vercel.app/start-here), guided paths for statisticians, data engineers, and students.
 
 ## A taste of the content
 
@@ -55,7 +55,7 @@ Five rules, distilled from the [MLOps Compliance Checklist](https://statistical-
 
 > - Every model version is reproducible from versioned code, data, and environment.
 > - Every production model has a registered owner and a documented rollback plan.
-> - Data validation runs *before* training — never train on unvalidated data.
+> - Data validation runs *before* training, never train on unvalidated data.
 > - Drift metrics have explicit thresholds tied to alerts, not dashboards nobody watches.
 > - Secrets never live in code or notebooks; they live in a vault.
 
@@ -64,7 +64,7 @@ Five rules, distilled from the [MLOps Compliance Checklist](https://statistical-
 <!-- TODO: replace with a 10-15s GIF (search + dark mode + Mermaid diagrams) -->
 ![Demo: navigating the handbook](docs/demo.gif)
 
-Or just browse the **[live site](https://statistical-software-engineering.vercel.app)** — full-text search, dark mode, and Mermaid diagrams included.
+Or just browse the **[live site](https://statistical-software-engineering.vercel.app)**, full-text search, dark mode, and Mermaid diagrams included.
 
 ## Quick start
 
@@ -93,7 +93,7 @@ npm run build
 
 ## Contributing
 
-Contributions are welcome — content (fixes, examples, translations) matters as much as code. Check the [good first issues](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue) and read the [contributing guide](CONTRIBUTING.md) (in Spanish, like the handbook).
+Contributions are welcome, content (fixes, examples, translations) matters as much as code. Check the [good first issues](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue) and read the [contributing guide](CONTRIBUTING.md) (in Spanish, like the handbook).
 
 ## License
 
