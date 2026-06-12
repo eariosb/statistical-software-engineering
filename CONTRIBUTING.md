@@ -1,107 +1,131 @@
 # Guía de Contribución
 
-Gracias por contribuir a este proyecto de ingeniería de software estadístico. Esta guía cubre todo lo necesario para añadir o modificar documentación sin romper la estructura existente.
+Gracias por tu interés en este proyecto de ingeniería de software estadístico. Esta guía explica cómo contribuir a la documentación o al código sin alterar la estructura existente.
 
-Al participar aceptas nuestro [Código de Conducta](CODE_OF_CONDUCT.md).
-
----
-
-## 0. Cómo contribuir contenido (no solo código)
-
-Este es un proyecto de **conocimiento**: las contribuciones de contenido valen tanto o más que las de código. No necesitas saber Next.js ni TypeScript para aportar. Formas de contribuir contenido:
-
-- **Corregir errores** en el manual: erratas, conceptos imprecisos, enlaces rotos, código que no ejecuta. Usa la plantilla de issue [Reportar error en el contenido](.github/ISSUE_TEMPLATE/reportar_error_contenido.md).
-- **Proponer un tema nuevo**: ¿falta una sección sobre algo que dominas (p. ej. Airflow, dbt, modelos bayesianos en producción)? Usa la plantilla [Proponer tema](.github/ISSUE_TEMPLATE/proponer_tema.md) antes de escribir, para alinear el enfoque.
-- **Ampliar una sección existente** con ejemplos ejecutables, casos reales o referencias.
-- **Traducir secciones al inglés**: crea el archivo como `content/en/Nombre_Seccion.md` (misma estructura que el original). Empieza por las marcadas como `good first issue`.
-- **Revisar PRs de contenido**: comentar con criterio técnico también es contribuir.
-
-Si es tu primera contribución, busca los issues etiquetados [`good first issue`](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue).
-
-### Licencia de tus contribuciones (licencia dual)
-
-Este repositorio usa licencia dual (ver [LICENSE](LICENSE)):
-
-- El **código** (`app/`, `components/`, `lib/`, `scripts/`, configuración) está bajo **MIT**.
-- El **contenido del manual** (`content/`) está bajo **CC BY-SA 4.0**.
-
-Al enviar un PR aceptas que tu aporte se publique bajo la licencia que corresponda según su ubicación: MIT para código, CC BY-SA 4.0 para contenido. CC BY-SA garantiza que el manual y sus derivados permanezcan siempre abiertos, exigiendo atribución a sus autores (tú incluido: tu nombre queda en el historial de Git y en la sección de contribuyentes).
+Al participar, aceptas nuestro [Código de Conducta](CODE_OF_CONDUCT.md).
 
 ---
 
-## 1. Cómo añadir un nuevo documento Markdown
+## 0. Cómo contribuir (sin saber programar)
 
-1. Crea el archivo en `content/` con el nombre en `PascalCase`, por ejemplo `content/Mi_Nuevo_Tema.md`.
-2. Abre `navigation.json` en la raíz del proyecto y añade una entrada al grupo correspondiente:
+Este proyecto valora tanto el contenido como el código. No necesitas experiencia en Next.js ni TypeScript para aportar.
+
+**Formas de contribuir contenido:**
+
+- **Corregir errores** del manual: erratas, conceptos imprecisos, enlaces rotos, código que no funciona. Usa la plantilla [Reportar error en el contenido](.github/ISSUE_TEMPLATE/reportar_error_contenido.md).
+- **Proponer un tema nuevo** (ej. Airflow, dbt, modelos bayesianos en producción). Usa la plantilla [Proponer tema](.github/ISSUE_TEMPLATE/proponer_tema.md) antes de escribir.
+- **Ampliar una sección** con ejemplos ejecutables, casos reales o referencias adicionales.
+- **Traducir contenido al inglés**: crea el archivo en `content/en/Nombre_Seccion.md` (misma estructura). Empieza con los marcados como `good first issue`.
+- **Revisar Pull Requests** de contenido: comentar desde el punto de vista técnico también es una contribución valiosa.
+
+Si es tu primera colaboración, busca issues con la etiqueta [`good first issue`](https://github.com/eariosb/statistical-software-engineering/labels/good%20first%20issue).
+
+### Licencia dual
+
+Este repositorio usa licencia dual (consulta el archivo [LICENSE](LICENSE)):
+
+- **Código** (`app/`, `components/`, `lib/`, `scripts/`, configuraciones) → **MIT**.
+- **Contenido del manual** (`content/`) → **CC BY-SA 4.0**.
+
+Al enviar un Pull Request, aceptas que tu contribución se publique bajo la licencia correspondiente según su ubicación. La licencia CC BY-SA garantiza que el manual y sus derivados permanezcan siempre abiertos, requiriendo atribución (tu nombre queda en el historial de Git y en la sección de contribuyentes).
+
+---
+
+## 1. Añadir un nuevo documento Markdown
+
+1. Crea el archivo en `content/` con nombre en `PascalCase`, por ejemplo `content/Mi_Nuevo_Tema.md`.
+2. Edita `navigation.json` (en la raíz) y agrega una entrada en la categoría correspondiente:
 
 ```json
 { "title": "Mi Nuevo Tema", "slug": "Mi_Nuevo_Tema" }
 ```
 
-3. El `slug` debe coincidir exactamente con el nombre del archivo sin extensión.
-4. Verifica que la app siga compilando: `npm run build`.
+El slug debe coincidir exactamente con el nombre del archivo (sin extensión).
 
----
 
-## 2. Convenciones de formato Markdown
+Verifica que la aplicación compile: npm run build.
 
-- **Listas**: usa `-` para ítems de lista. No uses `◦`, `•` ni numeración automática cuando el orden no importa.
-- **Bloques de código**: usa triple backtick con el lenguaje especificado:
+## 2. Formato Markdown
+Listas: usa - para ítems de lista. Evita ◦, • o numeración automática innecesaria.
 
-  ````markdown
-  ```python
-  import pandas as pd
-  ```
-  ````
+Bloques de código: usa triple backtick con el lenguaje especificado:
 
-  Nunca dejes el lenguaje en blanco (```` ``` ```` sin especificar).
+```python
+import pandas as pd
+```
+Siempre especifica el lenguaje. No uses bloques sin etiqueta.
 
-- **Tablas**: usa el formato estándar de Markdown con tuberías `|`. Incluye la fila de separación (`|---|---|`).
-- **Líneas en blanco**: deja siempre una línea en blanco antes y después de un encabezado, lista o bloque de código.
-- **Longitud de línea**: máximo 120 caracteres por línea en texto narrativo (no aplica a código).
-- **Negrita**: usa `**texto**` con doble asterisco, no guiones bajos `__texto__`.
+Tablas: formato estándar con tuberías |. Incluye la fila de separación (| --- | --- |).
 
-### Encabezados
+Líneas en blanco: deja una línea en blanco antes y después de encabezados, listas y bloques de código.
 
-- El título principal es `# H1` (uno por documento).
-- Las secciones usan `## H2` y las subsecciones `### H3`.
-- No saltes niveles (de `##` a `####`).
+Longitud de línea: máximo 120 caracteres para texto narrativo (no aplica a código).
 
----
+Negrita: usa **texto**, no __texto__.
 
-## 3. Uso de Mermaid
+Encabezados
+Un solo # H1 por documento (título principal).
 
-- Prefiere `flowchart TB` (top-to-bottom) sobre `LR` salvo que el diagrama sea explícitamente horizontal.
-- No uses `<br>` dentro de etiquetas de nodos; usa una descripción concisa en una sola línea.
-- Usa comillas dobles en etiquetas que contengan espacios o caracteres especiales:
+Secciones principales con ## H2, subsecciones con ### H3.
 
-  ```mermaid
-  flowchart TB
-      A["Inicio del pipeline"] --> B["Validación de datos"]
-      B --> C["Entrenamiento"]
-  ```
+No saltar niveles (ej. de ## a #### sin un ### intermedio).
 
-- Evita nodos con más de ~60 caracteres; si el texto es largo, divídelo en dos nodos.
+## 3. Diagramas Mermaid
+Usa flowchart TB (top‑bottom) salvo que el diagrama requiera disposición horizontal.
 
----
+No uses <br> dentro de las etiquetas de nodos. Usa descripciones concisas de una sola línea.
 
-## 4. Estándares para bloques de código Python y R
+Encierra las etiquetas con espacios o caracteres especiales entre comillas dobles:
 
-Cada bloque de código debe indicar al inicio si es ejecutable o ilustrativo:
+```mermaid
+flowchart TB
+    A["Inicio del pipeline"] --> B["Validación de datos"]
+    B --> C["Entrenamiento"]
+```
+
+Limita los nodos a ≈60 caracteres. Si el texto es largo, divide el concepto en dos nodos.
+
+## 4. Bloques de código ejecutables vs. ilustrativos
+Indica claramente al inicio del bloque si es ejecutable o solo ilustrativo:
 
 ```python
 # (ejemplo ejecutable)
 import pandas as pd
 df = pd.DataFrame({"x": [1, 2, 3]})
 print(df.head())
-```
-
-```python
 # (fragmento ilustrativo, no ejecutable)
 # Requiere: modelo entrenado y X_test definidos previamente
 y_pred = model.predict(X_test)
 ```
 
-Para bloques ejecutables:
+### Para bloques ejecutables:
 
-- T
+- Asegura que todas las importaciones estén presentes.
+- Define las variables necesarias dentro del bloque.
+- Usa semillas fijas (np.random.seed(2026)) cuando corresponda.
+
+### Para bloques ilustrativos:
+Explica brevemente las precondiciones (variables que se asumen ya definidas).
+
+## 5. Pull Requests
+Crea una rama con nombre descriptivo: fix/error-tabla-getting-started o feature/nueva-seccion-mlops.
+
+- Mantén los cambios enfocados: una sola corrección o característica por PR.
+- Asegura que el build pasa localmente (npm run build).
+- Actualiza la sección de "Documentos relacionados" si tu cambio afecta a otros documentos.
+-  Solicita revisión y responde a los comentarios.
+
+## 6. Reportar problemas (Issues)
+
+Usa las plantillas disponibles para:
+
+- Reportar error en el contenido
+- Proponer tema
+- Reportar bug de la aplicación
+
+Incluye siempre:
+
+- Pasos para reproducir (si aplica).
+- Versión del navegador / entorno.
+- Captura de pantalla (opcional pero útil).
+
